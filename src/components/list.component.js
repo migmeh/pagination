@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
 import Pagination from "@material-ui/lab/Pagination";
 
-
 export default class TutorialsList extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +14,6 @@ export default class TutorialsList extends Component {
             currentTutorial: null,
             currentIndex: -1,
             searchTitle: "",
-
             page: 1,
             count: 0,
             pageSize: 3,
@@ -133,12 +131,7 @@ export default class TutorialsList extends Component {
                     <ul className="list-group">
                         {tutorials &&
                         tutorials.map((tutorial, index) => (
-                            <li
-                                className={
-                                    "list-group-item " +
-                                    (index === currentIndex ? "active" : "")
-                                }
-                            >
+                            <li key={tutorial.id} className={"list-group-item " + (index === currentIndex ? "active" : "")}>
                                 {tutorial.title}
                             </li>
                         ))}
