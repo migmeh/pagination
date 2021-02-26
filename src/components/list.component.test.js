@@ -12,35 +12,5 @@ describe('list componet',()=>{
 
 
 
-
-/*
-    test('should test Header component', () => {
-        const wrapper = shallow(<Header />);
-        expect(wrapper).toMatchSnapshot();
-    });*/
-
-    /*it('render cero', ()=>{
-        const page = this.getRequestParams('justo at tincidunt rhoncus', 1, 5);
-
-        expect(page.error).toBe(false);
-        expect(page.status).toBe(200);
-    });*/
-
-
-   /* it('render uno', ()=>{
-        const wrapper = <retrieveTutorials/>;
-        expect(wrapper).toMatchSnapshot();
-    });*/
-
-  /*  it('render dos', ()=>{
-        const wrapper = <handlePageChange/>;
-        expect(wrapper).toMatchSnapshot();
-    });*/
-
-   /* it('render tres', ()=>{
-        const wrapper = <handlePageSizeChange/>;
-        expect(wrapper).toMatchSnapshot();
-    });*/
-
 });
 
