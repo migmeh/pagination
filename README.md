@@ -14,5 +14,9 @@ npm install
 npm start
 ```
 
+### coverage
+```
+npm run test:coverage
+```
 
 ### ENJOY

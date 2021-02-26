@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { shallow } from 'enzyme';
 import TutorialsList from "./list.component";
 
 
@@ -9,10 +10,23 @@ describe('list componet',()=>{
         expect(wrapper).toMatchSnapshot();
     });
 
-   /* it('render cero', ()=>{
-        const page = TutorialsList('justo at tincidunt rhoncus', 1, 5);
-        expect(page).toEqual(JSON);
+
+
+
+/*
+    test('should test Header component', () => {
+        const wrapper = shallow(<Header />);
+        expect(wrapper).toMatchSnapshot();
     });*/
+
+    /*it('render cero', ()=>{
+        const page = this.getRequestParams('justo at tincidunt rhoncus', 1, 5);
+
+        expect(page.error).toBe(false);
+        expect(page.status).toBe(200);
+    });*/
+
+
    /* it('render uno', ()=>{
         const wrapper = <retrieveTutorials/>;
         expect(wrapper).toMatchSnapshot();
