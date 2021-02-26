@@ -5,12 +5,16 @@ import TutorialsList from "./list.component";
 
 describe('list componet',()=>{
 
-    it('render', ()=>{
+    it('TutorialsList', ()=>{
         const wrapper = <TutorialsList/>;
         expect(wrapper).toMatchSnapshot();
     });
 
 
+    it('TutorialsList shallow', ()=>{
+        const wrapper = shallow(<TutorialsList/>);
+        expect(wrapper).toMatchSnapshot();
+    });
 
 });
 

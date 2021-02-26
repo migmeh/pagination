@@ -1,3 +1,58 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`list componet render 1`] = `<TutorialsList />`;
+exports[`list componet TutorialsList 1`] = `<TutorialsList />`;
+
+exports[`list componet TutorialsList shallow 1`] = `
+<div
+  className="list row"
+>
+  <div
+    className="col-md-12"
+  >
+    <h4>
+      Tutorials List
+    </h4>
+    <div
+      className="mt-3"
+    >
+      Select your page: 
+      <select
+        onChange={[Function]}
+        value={3}
+      >
+        <option
+          key="3"
+          value={3}
+        >
+          3
+        </option>
+        <option
+          key="6"
+          value={6}
+        >
+          6
+        </option>
+        <option
+          key="9"
+          value={9}
+        >
+          9
+        </option>
+      </select>
+      <WithStyles(ForwardRef(Pagination))
+        boundaryCount={1}
+        className="my-3"
+        count={0}
+        onChange={[Function]}
+        page={1}
+        shape="rounded"
+        siblingCount={1}
+        variant="outlined"
+      />
+    </div>
+    <ul
+      className="list-group"
+    />
+  </div>
+</div>
+`;
